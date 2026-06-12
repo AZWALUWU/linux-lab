@@ -1,6 +1,7 @@
 #!/bin/bash
 echo "=== USER SYSTEM CHECK ==="
-echo "User yang sedang login saat ini:"
-who
-echo "Total akun user terdaftar di sistem:"
+echo "User login now:"
+whoami
+
+echo "Total account on system:"
 wc -l /etc/passwd | awk '{print $1}'
